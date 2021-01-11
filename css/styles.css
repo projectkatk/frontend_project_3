@@ -1,0 +1,237 @@
+/* Root styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; 
+}
+
+/* ======== Elements - Basic Layout =========== */
+
+body {
+  color:#2b384e; 
+  background-color:#b1b9c5;  
+  margin: auto;
+}
+
+header {
+  text-align: center;
+}
+
+form {
+  border-top: 5px solid #2b384e;
+  padding-top: 5px;  
+}
+
+p, label,
+footer {
+  color: #2b384e;
+}
+
+label {
+  margin: 20px 0 10px;
+}
+
+input,
+select,
+textarea {
+  background-color: #e9e9e9; 
+  border: none;
+  border-radius: 7px;
+  padding: 20px;
+  width: 100%;  
+  font-size: 1.2rem;
+}
+
+textarea {
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* =======class & id selectors============ */
+
+/* ----------header area------------- */
+.title {
+  background-color: #2b384e;
+  color: #fff;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.sub-title {
+  padding: 15px;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 3px;
+}
+
+.sub-title p {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+/* main-container layout */
+.mainContainer {
+  max-width: 1920px;
+  margin: auto;
+  padding: 5% 5% 1%;
+}
+
+
+/* =============== Form styling =============== */
+
+/* ---------contact information section---------- */
+/* personal info style */
+.line {
+  border-top: 3px solid #2b384e;
+  display: block;
+  margin: auto;
+  padding-bottom: 25px;
+}
+
+.contact-info {
+  margin: auto;
+  padding: 10px 0;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.contact-field,
+.newsletter-field {
+  border: none;
+}
+
+.legend {
+  margin-bottom: 5px;
+}
+.inline label,
+.inline input
+.option-control {
+ display: block;
+}
+
+/* custom arrow for shape */
+.option-control {
+  appearance: none;
+  background: url(../img/arrows.svg) no-repeat;
+  background-position-x: 98%;
+  background-position-y: center;
+  background-size: 10px;
+  background-color:#e9e9e9;
+  color:#2b384e;
+}
+
+/* newsletter section style*/
+.typeNewsletter,
+.formatNewsletter {
+  padding-left:10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* checkbox & radio styling */
+.checkNews {
+  margin: 20px 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  width:inherit;  
+  margin-right: 12px;
+}
+
+.radio,
+.radio p {
+  margin-bottom: 20px;
+}
+
+/* textfield */
+.textfield {
+  margin-top: 30px;
+}
+
+/* button styling */
+.signup {
+  width: 100%;
+  border: none;
+  border-radius: 7px;
+  background-color:#42a7a1;
+  padding: 20px 50px;
+  margin-top: 30px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* =============== footer styling============== */
+
+.copyright {
+  text-align: center;
+  margin-bottom: 200px;
+  font-style: italic;
+}
+
+/* ---------------pseudoClasses and/or pseudoElements-------------------*/
+
+/* input placeholder style */
+input::placeholder
+{
+  color: #a3a5aa;
+  text-align: right;
+  font-style:italic;
+}
+
+.zipcode::placeholder {
+  text-align: left;
+}
+
+/* interaction styling */
+input:focus,
+textarea:focus {
+  transform: scale(1.03); 
+  background-color: #d0ecf76c;
+}
+
+.signup:hover {
+  background-color:#378b87;
+}
+.signup:active {
+  background-color: #c0e9e7;
+}
+
+/* ----------------Media Queries -------------- */
+/* ///////////////////////////////////////// */
+
+@media (min-width:768px) {
+  
+  .inline {
+    display: flex;
+    margin: 25px 0 15px;
+  }
+  .inline label {
+    display: inline-block;
+    min-width: 15%;
+    max-width: 15%;
+    height: 30px;
+  }
+
+  .inline input,
+  .inline select {
+    display: inline-block;
+  }
+
+  input[name="user-zip"] {
+    width: 20%;
+  }
+}
+
+
+
+
+
+
+
+
+
+

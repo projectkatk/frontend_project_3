@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- GOOGLE Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+ 
+  <!-- CSS Style Sheet -->
+  <link rel="stylesheet" href="css/styles.css"> 
+  <title>The Code Review</title>
+</head>
+<body>
+  <header>
+    <h1 class="title">THE CODE REVIEW</h1>
+    <div class="sub-title">
+      <h2>Signup for our newsletter</h2>
+      <p>Get the latest news on how your code is doing right in your box</p>
+    </div>
+  </header>
+  <div class="mainContainer">   
+    <form action="#" class="thickLine">
+      <span class="line"></span> 
+      <section class="contact-info">
+        <fieldset class="contact-field">        
+          <legend class="legend"><h2>Contact Information</h2></legend>
+          <div class="inline">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Required" name="user-name" required>
+          </div>
+          <div class="inline">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="user-email" placeholder="Required" required>
+          </div>
+          <div class="inline">
+            <label for="telephone">Phone Number</label>
+            <input type="tel" name="user-phone" id="telephone" placeholder="Type in ONLY digits starting with 0">
+          </div>
+          <div class="inline">
+            <label for="address1">Street Address</label>
+            <input type="text" name="user-address1" id="address1">
+          </div>
+          <div class="inline">
+            <label for="city">City</label>
+            <input type="text" name="user-city" id="city">
+          </div>
+          <div class="inline">
+            <label for="state">State</label>
+            <select class="option-control" name="user-state" id="state">          
+              <option value="" selected disabled>Choose State </option>
+              <option value="number1">Number 1</option>
+              <option value="number2">Number 2</option>
+              <option value="number3">Number 3</option>
+              <option value="number4">Number 4</option>
+              <option value="number5">Number 5</option>
+            </select>
+          </div>
+          <div class="inline">
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" name="user-zip" placeholder="5 digits" class="zipcode">
+          </div>
+        </fieldset>
+      </section>
+      <section class="newsletter">
+        <span class="line"></span>
+        <fieldSet class="newsletter-field">
+          <legend class="legend"><h2>Newsletter</h2></legend>
+          <div class="typeNewsletter">
+            <p>Select the newsletters you would like to receive</p>        
+            <div class="checkNews">
+              <input type="checkbox" name="news" id="htmlNews" value="h-news" checked>
+              <label for="htmlNews" class="gap">HTML News</label>
+            </div>  
+            <div class="checkNews">
+              <input type="checkbox" name="news" id="cssNews" value="c-news">
+              <label for="cssNews" class="gap">CSS News</label>      
+            </div>
+            <div class="checkNews">
+              <input type="checkbox" name="news" id="jsNews" value="j-news">
+              <label for="jsNews" class="gap">Javascript News</label>
+            </div>          
+          </div>
+          <div class="formatNewsletter">
+            <div class="radio">
+              <p>Newsletter format</p>
+              <input type="radio" name="news-format" id="formatHTML" value="html-format" checked>
+              <label for="formatHTML" class="gap">HTML</label>
+            </div>
+            <div class="radio">
+              <input type="radio" name="news-format" id="formatText" value="text-format">
+              <label for="formatText" class="gap">Plain text</label>
+            </div>
+            <div class="textfield">
+              <label for="comment" >Other topics you'd like to hear about</label>
+              <textarea name="user-comment" id="comment" cols="30" rows="5"></textarea>
+            </div>
+            <button class="signup">Sign Up</button>
+          </div>     
+        </fieldSet>
+      </section>
+    </form>
+  </div>
+  <footer class="copyright">
+    <p>Copyright The Code Review</p>
+  </footer>  
+</body>
+</html>
